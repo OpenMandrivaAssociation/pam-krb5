@@ -1,5 +1,5 @@
 Name:		pam-krb5
-Version:	4.1
+Version:	4.2
 Release:	%mkrel 1
 Summary:	Kerberos v5 PAM module
 License:	LGPL
