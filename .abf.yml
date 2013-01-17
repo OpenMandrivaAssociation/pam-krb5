@@ -1,2 +1,3 @@
+---
 sources:
-  "pam-krb5-4.4.tar.gz:"	117ed0fd42cceac93d1d7a6801006bb13c098113
+  pam-krb5-4.4.tar.gz: 117ed0fd42cceac93d1d7a6801006bb13c098113
