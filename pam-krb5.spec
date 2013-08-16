@@ -1,15 +1,14 @@
+Summary:	Kerberos v5 PAM module
 Name:		pam-krb5
 Version:	4.4
-Release:	%mkrel 2
-Summary:	Kerberos v5 PAM module
-License:	LGPL
+Release:	2
+License:	LGPLv2
 Group:		System/Libraries
-URL:		http://www.eyrie.org/~eagle/software/pam-krb5/
+Url:		http://www.eyrie.org/~eagle/software/pam-krb5/
 Source0:	http://archives.eyrie.org/software/kerberos/%{name}-%{version}.tar.gz
 BuildRequires:	krb5-devel
 BuildRequires:	pam-devel
-Conflicts:      pam_krb5
-BuildRoot:	%{_tmppath}/%{name}-%{version}
+Conflicts:	pam_krb5
 
 %description
 pam-krb5 provides a Kerberos v5 PAM module that supports authentication, user
@@ -28,16 +27,10 @@ and xdm.
 %make
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %doc LICENSE NEWS README TODO
 /%{_lib}/security/*
 %{_mandir}/man5/pam_krb5.5*
-
 
