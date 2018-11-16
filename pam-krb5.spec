@@ -8,6 +8,7 @@ Url:		http://www.eyrie.org/~eagle/software/pam-krb5/
 Source0:	http://archives.eyrie.org/software/kerberos/%{name}-%{version}.tar.gz
 BuildRequires:	krb5-devel
 BuildRequires:	pam-devel
+BuildRequires:	pkgconfig(com_err)
 Conflicts:	pam_krb5
 
 %description
@@ -20,14 +21,14 @@ implementation flaws in commonly-used PAM-enabled applications such as OpenSSH
 and xdm. 
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
-%configure2_5x --libdir=/%{_lib}
-%make
+%configure --libdir=/%{_lib}
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc LICENSE NEWS README TODO
