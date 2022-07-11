@@ -1,6 +1,6 @@
 Summary:	Kerberos v5 PAM module
 Name:		pam-krb5
-Version:	4.9
+Version:	4.11
 Release:	1
 License:	LGPLv2
 Group:		System/Libraries
