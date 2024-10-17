@@ -4,7 +4,7 @@ Version:	4.11
 Release:	2
 License:	LGPLv2
 Group:		System/Libraries
-Url:		http://www.eyrie.org/~eagle/software/pam-krb5/
+Url:		https://www.eyrie.org/~eagle/software/pam-krb5/
 Source0:	http://archives.eyrie.org/software/kerberos/%{name}-%{version}.tar.gz
 BuildRequires:	krb5-devel
 BuildRequires:	pam-devel
