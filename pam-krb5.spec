@@ -6,6 +6,11 @@ License:	LGPLv2
 Group:		System/Libraries
 Url:		https://www.eyrie.org/~eagle/software/pam-krb5/
 Source0:	http://archives.eyrie.org/software/kerberos/%{name}-%{version}.tar.gz
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	krb5-devel
 BuildRequires:	pam-devel
 BuildRequires:	pkgconfig(com_err)
